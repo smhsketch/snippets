@@ -59,4 +59,21 @@ h1 {
     border-radius: 24px;
     height: 4vh;
     width: 10vw;
+    animation: shrink 100ms;
+    animation-fill-mode: forwards;
+}
+
+.submit:hover {
+    animation: expand 100ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes expand {
+    from {width: 10vw;}
+    to {width: 15vw;}
+}
+
+@keyframes shrink {
+    to {width: 10w;}
+    from {width: 15vw;}
 }
